@@ -29,6 +29,7 @@ public class Solution {
         generateHelper(numRows - 1, triangle); // Recursively generate the previous row
 
         List<Integer> currentRow = new ArrayList<>();
+        
         currentRow.add(1); // First element is always 1
 
         List<Integer> prevRow = triangle.isEmpty() ? null : triangle.get(triangle.size() - 1);
@@ -43,20 +44,11 @@ public class Solution {
     }
     
 	public static void main(String[] args) {
-		Solution solution = new Solution(); // Create an instance of Solutions class
+		Solution solution = new Solution();
 	    int numRows = 5; // Number of rows for Pascal's triangle
-	    List<List<Integer>> triangle = solution.generate(numRows); // Call the generate method
-	    printTriangle(triangle); // Print the generated Pascal's triangle
+	    List<List<Integer>> triangle = solution.generate(numRows);
+   
+	    TrianglePrinter.printTriangle(triangle);
 	}
-	
-    // Helper method to print Pascal's triangle
-    private static void printTriangle(List<List<Integer>> triangle) {
-        for (List<Integer> row : triangle) {
-            for (Integer num : row) {
-                System.out.print(num + " ");
-            }
-            System.out.println();
-        }
-    }
-    
+
 }
