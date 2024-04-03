@@ -1,12 +1,12 @@
-package recursive_solution;
+package src.recursive_solution;
 
 public class ListNode {
-    public int val;
-    public ListNode next;
+    int val;
+    ListNode next;
     
     ListNode() {}
    
-    public ListNode(int val){
+    ListNode(int val){
     	this.val = val;
     }
     
