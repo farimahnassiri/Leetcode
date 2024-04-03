@@ -71,3 +71,11 @@
 206-reverse-linked-list/LinkedListReversal/.project
 206-reverse-linked-list/LinkedListReversal/src/recursive_solution/ListNode.java
 206-reverse-linked-list/LinkedListReversal/src/reverseList_solution/copy/Solution.java
+*.state
+*.xml
+*.properties
+206-reverse-linked-list/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache
+206-reverse-linked-list/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache
+206-reverse-linked-list/.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache
+*.prefs
+*.resources
