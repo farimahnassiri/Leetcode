@@ -22,6 +22,9 @@ class Solution {
         return previousNode;
     }
     
+    
+    //Testing and printing method in main
+    
     public static void main(String[] args) {
         // Example 1: [1, 2, 3, 4, 5]
         ListNode head1 = createLinkedList(new int[]{1, 2, 3, 4, 5});
