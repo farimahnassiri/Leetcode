@@ -79,3 +79,6 @@
 206-reverse-linked-list/.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache
 *.prefs
 *.resources
+136-single-number/SingleNumberSolver/.classpath
+136-single-number/SingleNumberSolver/.project
+136-single-number/SingleNumberSolver/bin/Solution.class
