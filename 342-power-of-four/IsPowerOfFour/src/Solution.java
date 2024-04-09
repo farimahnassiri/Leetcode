@@ -33,8 +33,11 @@ public class Solution {
 
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Solution tester = new Solution();
+	  
+		System.out.println("Example 1: " + tester.isPowerOfFour(16)); // Output: true
+	    System.out.println("Example 2: " + tester.isPowerOfFour(5));  // Output: false
+	    System.out.println("Example 3: " + tester.isPowerOfFour(1));  // Output: true 
 	}
 
 }
