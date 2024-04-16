@@ -16,8 +16,6 @@ Constraints: -2^31 <= n <= 2^31 - 1
 
 package logarithmicSolution;
 
-import iterativeSolution.Solution;
-
 public class Solution {
     public boolean isPowerOfThree(int n) {
         // Handle edge cases
