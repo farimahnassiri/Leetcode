@@ -1,4 +1,4 @@
-package recursiveSolution;
+package logarithmicSolution;
 /*
  * Given an integer n, return true if it is a power of two. Otherwise, return false.
  * 
@@ -19,16 +19,17 @@ package recursiveSolution;
  * -2^31 <= n <= 2^31 - 1
  */
 
+
 class Solution {
-    public boolean isPowerOfTwo(int n) {
-        if (n == 1){
-            return true;
-        }
-        if (n == 0 || n % 2 == 1){
-            return false;
-        }
-        return isPowerOfTwo(n / 2);
-    }
+
+	 public boolean isPowerOfTwo(int n) {
+		 if(n <= 0) {
+			 return false;
+		 }
+		 double logResult = Math.log(n) / Math.log(2);
+		 return Math.abs(logResult - Math.round(logResult)) <1e-10;
+	}
+	
     public static void main(String[] args) {
         Solution solution = new Solution();
 
@@ -37,4 +38,5 @@ class Solution {
         System.out.println(solution.isPowerOfTwo(16)); // true
         System.out.println(solution.isPowerOfTwo(3)); // false
     }
+	
 }
