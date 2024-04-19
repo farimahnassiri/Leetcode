@@ -65,6 +65,7 @@ class MyQueue {
     public boolean empty() {
         return s1.isEmpty();
     }
+    
     public static void main(String[] args) {
         // Test the examples
         MyQueue myQueue = new MyQueue();
