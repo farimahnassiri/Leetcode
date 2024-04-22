@@ -17,7 +17,7 @@ Constraints:
 The number of nodes in the tree is in the range [0, 100].
 -100 <= Node.val <= 100
 */
-package recursiveSolution;
+package stackSolution;
 
 import java.util.*;
 
@@ -25,16 +25,18 @@ class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
         // inorder traversal :: Left-Root-Right
         List<Integer> result = new ArrayList<>();
-        inorder(root, result);
-        return result; 
-    }
-    private void inorder(TreeNode node, List<Integer> result){
-        if(node == null){
-            return;
+        Stack<TreeNode> stack = new Stack<>();
+        
+        while(root != null || !stack.isEmpty()) {
+        	while(root != null) {
+        		stack.push(root);
+        		root = root.left;
+        	}
+        	root = stack.pop();
+        	result.add(root.val);
+        	root = root.right;
         }
-        inorder(node.left, result);
-        result.add(node.val);
-        inorder(node.right, result);
+        return result;  
     }
     public static void main(String[] args) {
         Solution solution = new Solution();
