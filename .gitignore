@@ -166,3 +166,5 @@
 222-count-complete-tree-nodes/CountCompleteTreeNodes/.classpath
 222-count-complete-tree-nodes/CountCompleteTreeNodes/.DS_Store
 222-count-complete-tree-nodes/CountCompleteTreeNodes/.project
+226-invert-binary-tree/InvertBinaryTree/.project
+226-invert-binary-tree/InvertBinaryTree/.classpath
