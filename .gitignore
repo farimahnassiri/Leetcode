@@ -2,7 +2,7 @@
 *.metadata/
 *.project
 *.classpath
-*.org.eclipse.jdt.core.prefs
+*.prefs
 *.DS_Store
 
 # Ignore compiled Java class files
