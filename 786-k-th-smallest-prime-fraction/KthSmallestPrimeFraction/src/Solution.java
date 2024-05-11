@@ -28,10 +28,8 @@ public class Solution {
                 fractions.add(new int[]{arr[i], arr[j]});
             }
         }
-
         // Sort fractions based on their values
         fractions.sort((a, b) -> Integer.compare(a[0] * b[1], b[0] * a[1]));
-
         // Return the k-th smallest fraction
         return fractions.get(k - 1);
     }
