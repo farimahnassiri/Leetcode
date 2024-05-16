@@ -30,3 +30,4 @@ docs/
 
 # Ignore Jupyter Notebook checkpoints
 .ipynb_checkpoints/
+.DS_Store
