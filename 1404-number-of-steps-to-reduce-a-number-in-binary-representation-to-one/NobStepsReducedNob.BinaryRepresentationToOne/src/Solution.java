@@ -27,26 +27,25 @@
 
 class Solution {
 	
-    private int binaryNum(String s) {
-        int result = 0;
-        int length = s.length();
-        for (int i = 0; i < length; i++) {
-            if (s.charAt(length - 1 - i) == '1') {
-                result += Math.pow(2, i);
-            }
-        }
-        return result;
-    }
-
     public int numSteps(String s) {
-        int number = binaryNum(s);
         int steps = 0;
-        
-        while (number > 1) {
-            if (number % 2 == 0) {
-                number /= 2;
+        StringBuilder sb = new StringBuilder(s);
+
+        while (sb.length() > 1) {
+            int lastIndex = sb.length() - 1;
+            if (sb.charAt(lastIndex) == '0') {
+                sb.deleteCharAt(lastIndex);
             } else {
-                number += 1;
+                int i = lastIndex;
+                while (i >= 0 && sb.charAt(i) == '1') {
+                    sb.setCharAt(i, '0');
+                    i--;
+                }
+                if (i >= 0) {
+                    sb.setCharAt(i, '1');
+                } else {
+                    sb.insert(0, '1');
+                }
             }
             steps++;
         }
